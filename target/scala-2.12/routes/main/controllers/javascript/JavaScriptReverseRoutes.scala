@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/lab 8/conf/routes
-// @DATE:Tue Dec 12 13:47:57 GMT 2017
+// @DATE:Tue Dec 12 15:17:51 GMT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -60,12 +60,32 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:26
+    def updateProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.updateProduct",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "updateProduct/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+        }
+      """
+    )
+  
     // @LINE:24
     def deleteCustomer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.deleteCustomer",
       """
         function(id0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "delCustomer/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+        }
+      """
+    )
+  
+    // @LINE:28
+    def updateCustomer: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.updateCustomer",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "updateCustomer/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )

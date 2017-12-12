@@ -1,7 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab 8/app/views/addCustomer.scala.html:13:20: not found: value customerForm[0m
-[0m[[0m[31merror[0m] [0m[0m        @inputText(customerForm("name"), '_label -> "Name", 'class -> "form-control")[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab 8/app/views/addCustomer.scala.html:15:20: not found: value customerForm[0m
-[0m[[0m[31merror[0m] [0m[0m        @inputText(customerForm("id"), '_label -> "", 'hidden -> "hidden")[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab 8/app/controllers/HomeController.java:141:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable p[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                p = Customer.find.byId(id);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab 8/app/controllers/HomeController.java:142:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable p[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                customerForm = formFactory.form(Customer.class).fill(p);[0m

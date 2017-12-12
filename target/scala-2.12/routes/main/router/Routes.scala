@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/lab 8/conf/routes
-// @DATE:Tue Dec 12 13:47:57 GMT 2017
+// @DATE:Tue Dec 12 15:17:51 GMT 2017
 
 package router
 
@@ -49,6 +49,8 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addCustomerSubmit""", """controllers.HomeController.addCustomerSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delProduct/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteProduct(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delCustomer/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteCustomer(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateProduct/""" + "$" + """id<[^/]+>""", """controllers.HomeController.updateProduct(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateCustomer/""" + "$" + """id<[^/]+>""", """controllers.HomeController.updateCustomer(id:Long)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -218,6 +220,42 @@ class Routes(
     )
   )
 
+  // @LINE:26
+  private[this] lazy val controllers_HomeController_updateProduct9_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateProduct/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_updateProduct9_invoker = createInvoker(
+    HomeController_0.updateProduct(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "updateProduct",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """updateProduct/""" + "$" + """id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:28
+  private[this] lazy val controllers_HomeController_updateCustomer10_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateCustomer/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_updateCustomer10_invoker = createInvoker(
+    HomeController_0.updateCustomer(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "updateCustomer",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """updateCustomer/""" + "$" + """id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -273,6 +311,18 @@ class Routes(
     case controllers_HomeController_deleteCustomer8_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_HomeController_deleteCustomer8_invoker.call(HomeController_0.deleteCustomer(id))
+      }
+  
+    // @LINE:26
+    case controllers_HomeController_updateProduct9_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_HomeController_updateProduct9_invoker.call(HomeController_0.updateProduct(id))
+      }
+  
+    // @LINE:28
+    case controllers_HomeController_updateCustomer10_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_HomeController_updateCustomer10_invoker.call(HomeController_0.updateCustomer(id))
       }
   }
 }

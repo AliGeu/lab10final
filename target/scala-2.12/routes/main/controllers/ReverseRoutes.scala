@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/lab 8/conf/routes
-// @DATE:Tue Dec 12 13:47:57 GMT 2017
+// @DATE:Tue Dec 12 15:17:51 GMT 2017
 
 import play.api.mvc.Call
 
@@ -43,10 +43,22 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "delProduct/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
+    // @LINE:26
+    def updateProduct(id:Long): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "updateProduct/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
+    }
+  
     // @LINE:24
     def deleteCustomer(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "delCustomer/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
+    }
+  
+    // @LINE:28
+    def updateCustomer(id:Long): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "updateCustomer/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
     // @LINE:14

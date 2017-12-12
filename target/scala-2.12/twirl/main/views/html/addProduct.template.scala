@@ -50,7 +50,7 @@ Seq[Any](format.raw/*1.37*/("""
         """),_display_(/*18.10*/inputText(productForm("id"), '_label -> "", 'hidden -> "hidden")),format.raw/*18.74*/("""
   
         """),format.raw/*20.9*/("""<div class="actions">
-            <input type="submit" value="Add/Update Product" class="btn btn-primary">
+            <input type="submit" value="Add/update Product" class="btn btn-primary">
             <a href=""""),_display_(/*22.23*/routes/*22.29*/.HomeController.index),format.raw/*22.50*/("""">
                 <button type="button" class="btn btn-warning">Cancel</button>
             </a>
@@ -72,9 +72,9 @@ Seq[Any](format.raw/*1.37*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Dec 12 12:32:53 GMT 2017
+                  DATE: Tue Dec 12 15:09:10 GMT 2017
                   SOURCE: /home/wdd/webapps/lab 8/app/views/addProduct.scala.html
-                  HASH: 5e4d2e7bacc85f7626f2c6896dabbe46e3ec1f7d
+                  HASH: c57fb4519639bee15ca9c8c337d30d13a225b9a2
                   MATRIX: 967->1|1075->39|1120->36|1148->55|1175->57|1202->76|1241->78|1272->83|1351->137|1459->236|1499->238|1535->275|1572->374|1609->384|1622->388|1653->398|1691->409|1787->484|1824->494|1934->583|1971->593|2069->670|2106->680|2204->757|2244->770|2329->834|2368->846|2524->975|2539->981|2581->1002|2729->1120|2758->1138|2791->1165
                   LINES: 28->1|31->3|34->1|36->4|37->5|37->5|37->5|38->6|40->8|40->8|40->8|41->9|42->10|43->11|43->11|43->11|45->13|45->13|46->14|46->14|47->15|47->15|48->16|48->16|50->18|50->18|52->20|54->22|54->22|54->22|58->26|58->26|59->27
                   -- GENERATED --
