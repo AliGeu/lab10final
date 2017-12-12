@@ -1,8 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab 8/app/controllers/HomeController.java:141:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   variable p[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
-[0m[[0m[31merror[0m] [0m[0m                p = Customer.find.byId(id);[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab 8/app/controllers/HomeController.java:142:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   variable p[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
-[0m[[0m[31merror[0m] [0m[0m                customerForm = formFactory.form(Customer.class).fill(p);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab 8/app/models/Category.java:45:1:  java.util.List<models.Product> cannot be converted to java.lang.String[0m
+[0m[[0m[31merror[0m] [0m[0m        return products;[0m
