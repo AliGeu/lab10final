@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/lab 8/conf/routes
-// @DATE:Tue Dec 12 12:49:03 GMT 2017
+// @DATE:Tue Dec 12 13:47:57 GMT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -40,12 +40,32 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:20
     def addCustomerSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.addCustomerSubmit",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addCustomerSubmit"})
+        }
+      """
+    )
+  
+    // @LINE:22
+    def deleteProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.deleteProduct",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "delProduct/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+        }
+      """
+    )
+  
+    // @LINE:24
+    def deleteCustomer: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.deleteCustomer",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "delCustomer/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )

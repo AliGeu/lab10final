@@ -90,4 +90,20 @@ public class HomeController extends Controller {
                 }
             }  
 
+        public Result deleteProduct(Long id) {
+            Product.find.ref(id).delete();
+
+            flash("success", "Product has been deleted");
+
+            return redirect(routes.HomeController.index());
+        }
+
+        public Result deleteCustomer(Long id) {
+            Customer.find.ref(id).delete();
+
+            flash("success", "Customer has been deleted");
+
+            return redirect(routes.HomeController.customer());
+        }
+
     }

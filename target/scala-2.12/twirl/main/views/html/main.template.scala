@@ -106,6 +106,8 @@ Copyright <strong>Online Shop</strong>
 
 </container>
 
+<script src=""""),_display_(/*77.15*/routes/*77.21*/.Assets.versioned("javascripts/main.js")),format.raw/*77.61*/(""""></script>
+
 </body>
 
 </html> """))
@@ -124,11 +126,11 @@ Copyright <strong>Online Shop</strong>
 
               /*
                   -- GENERATED --
-                  DATE: Tue Dec 12 12:11:32 GMT 2017
+                  DATE: Tue Dec 12 13:44:52 GMT 2017
                   SOURCE: /home/wdd/webapps/lab 8/app/views/main.scala.html
-                  HASH: 79e9e6d816020006b84812d7b0a80970e09af483
-                  MATRIX: 952->1|1077->31|1105->33|1221->122|1247->127|1446->299|1461->305|1523->346|2005->802|2032->809|2061->811
-                  LINES: 28->1|33->1|35->3|43->11|43->11|49->17|49->17|49->17|87->55|87->55|89->57
+                  HASH: 09918b04fd0e8d82e274ddb0c968bfdeb7753a89
+                  MATRIX: 952->1|1077->31|1105->33|1221->122|1247->127|1446->299|1461->305|1523->346|2005->802|2032->809|2061->811|2247->970|2262->976|2323->1016
+                  LINES: 28->1|33->1|35->3|43->11|43->11|49->17|49->17|49->17|87->55|87->55|89->57|109->77|109->77|109->77
                   -- GENERATED --
               */
           

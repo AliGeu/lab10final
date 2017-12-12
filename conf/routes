@@ -17,5 +17,8 @@ POST    /addProductSubmit           controllers.HomeController.addProductSubmit
 
 GET     /addCustomer                 controllers.HomeController.addCustomer
 
-
 POST    /addCustomerSubmit           controllers.HomeController.addCustomerSubmit
+
+GET     /delProduct/:id               controllers.HomeController.deleteProduct(id:Long)
+
+GET     /delCustomer/:id               controllers.HomeController.deleteCustomer(id:Long)
