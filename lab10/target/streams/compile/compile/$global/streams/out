@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab10/app/views/index.scala.html:3:35: not found: value categories[0m
+[0m[[0m[31merror[0m] [0m[0m@(products: List[models.Product], categories: List[models.Category])[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab10/app/views/index.scala.html:11:19: not found: value categories[0m
+[0m[[0m[31merror[0m] [0m[0m        @for(c <- categories) {[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/lab10/app/views/index.scala.html:63:14: value getCategory is not a member of models.Product[0m
+[0m[[0m[31merror[0m] [0m[0m      <td>@p.getCategory.getName</td> [0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
